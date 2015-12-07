@@ -26,7 +26,7 @@
 .media-object {
   width: 128px;
   height: 128px;
-  border-radius: 5px;
+  border-radius: 65px;
 }
 
 .media .thumbnail {
@@ -81,3 +81,11 @@ a.thumbnail:focus,
 a.thumbnail.active {
   border-color: #563d7c;
 }
+
+/*.glyphicon: hover {
+  opacity: 1;
+}
+
+.glyphicon {
+  opacity: 0;
+}*/
