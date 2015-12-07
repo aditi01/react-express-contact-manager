@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> React Example </title>
+	<!--Bootsrap-->
+		<link rel = "stylesheet" href="/css/bootstrap.css"/>
+		<link rel = "stylesheet" href = "/css/main.css" />
+		<link rel = "stylesheet" href = "/css/avgrund.css" />
+	</head>
+<body>
+	<div id="modal-container">
+	</div>
+	<div id="component-container">
+		<!--ContactManager gets rendered here-->
+	</div>
+	<!-- an overlay used by avgrund library-->
+	<div class="avgrund-cover"></div>
+</body>
+		<script type="text/javascript" src="../libs/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="../libs/avgrund.js"></script>
+		<script type="text/javascript" src="../libs/react.js"></script> 
+		<script type="text/javascript" src="../libs/react-dom.js"></script> 
+		<script type="text/javascript" src="../libs/browser.min.js"></script>
+
+	<script type="text/babel" src="/js/components/add-contact.js"> </script>
+	<script type="text/babel" src="/js/components/edit-contact.js"> </script>
+	<script type="text/babel" src="/js/components/contact.js"> </script>
+	<script type="text/babel" src="/js/components/contact-list.js"> </script>
+	<script type="text/babel" src="/js/components/contact-manager.js"> </script>
+	<script type="text/babel" src="/js/main.js"> </script>
+</html>
