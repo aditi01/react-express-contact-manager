@@ -1,7 +1,7 @@
 
 var AddContact = React.createClass({
 	closePopup: function() {
-		Avgrund.hide();
+		Avgrund.hide(); //1.
 	},
 	submitContact: function() {
 		console.log("submitting");
@@ -11,7 +11,7 @@ var AddContact = React.createClass({
 
 		var that = this;
 
-		if(fullNameInput.value !== "" && emailInput.value !== "" && phoneInput !== ""){
+		if(fullNameInput.value !== "" && emailInput.value !== "" && phoneInput !== ""){ //2.
 			var contactInfo = {
 				contactName: fullNameInput.value,
 				contactEmail: emailInput.value,
@@ -33,7 +33,7 @@ var AddContact = React.createClass({
 				}
 			});
 		}
-		Avgrund.hide();
+		Avgrund.hide(); //1.
 
 	},
 
@@ -83,3 +83,8 @@ var AddContact = React.createClass({
 });
 
 window.AddContact = AddContact;
+
+/*1. using the avgrund.js function Avgrund.hind(), to close the "Add Contact" window when clicked on Submit or Cancel button
+
+2. condition that determines that all the fields are are filled in the Add Contact window only then the data is 
+added to the database*/

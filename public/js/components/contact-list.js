@@ -40,7 +40,7 @@ var ContactList = React.createClass({
 		});
 	},
 
-	editContactFromServer: function(id, fullname, email, phone) {
+	editContactFromServer: function(id, fullname, email, phone) { //editing the existing contact, where the parameters passed are the fields that can be edited and the id identifies the record in the db
 		$.ajax({
 			url: '/contact/edit',
 			type: 'POST',

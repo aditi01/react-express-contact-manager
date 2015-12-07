@@ -1,7 +1,7 @@
 
 var Contact = React.createClass( {
 	removeContact: function() {
-		this.props.deleteContactFromServer(this.props.contactId);
+		this.props.deleteContactFromServer(this.props.contactId); //fetching the property using props, from the parent
 	},
 	editContactInfo: function(){
 		ReactDOM.render(<EditContact 

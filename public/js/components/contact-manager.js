@@ -1,11 +1,11 @@
 
-
+//Contactmanager is the parent component which defines the outline of the contact-manage
 var ContactManager = React.createClass({
 	showPopup: function() {
-		Avgrund.show( "#add-contact" );
+		Avgrund.show( "#add-contact" ); //this is the function in the avgrund.js file, which is taken from Hakim Hatab's Avgrund project
 	},
 
-	render: function() {
+	render: function() { //1.
 		return(
 			<div>
 			    <header className="bs-header">
@@ -39,3 +39,6 @@ var ContactManager = React.createClass({
 });
 //due to issue: http://stackoverflow.com/questions/33109430/script-tag-text-babel-variable-scope
 window.ContactManager = ContactManager;
+
+/*1. function that returns single child element, in this case a div tag. The child element can be the virtual representation
+of a native DOM component or another component that has been defined*/

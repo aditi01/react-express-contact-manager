@@ -25,11 +25,11 @@ var EditContact = React.createClass({
 		Avgrund.hide();
 	},
 
-	componentDidMount: function() {
+	componentDidMount: function() { //1
 		this.showPopup();
 	},
 
-	componentWillReceiveProps: function(nextProps) {
+	componentWillReceiveProps: function(nextProps) { //2
   		console.log(nextProps);
   		this.setState({
   			contactId: nextProps.contactId,
@@ -105,3 +105,9 @@ var EditContact = React.createClass({
 });
 
 window.EditContact = EditContact;
+
+/*1. The life-cycle of the functions used in this code is: 1st getInitialState is executed, then render function and 
+then componentDidMount. setState function automatically calls the render function after it gets executed.
+
+2. This method is not called for the initial render, but is called for the 2nd and the further renders. "nextProps"
+parameter refers to the props recieved in the 2nd and its subsiquent props*/
