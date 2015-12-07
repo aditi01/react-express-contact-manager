@@ -8,3 +8,5 @@ ReactJS version of https://github.com/dmytroyarmak/backbone-contact-manager, wit
 - To add the initial contacts into the application run, nodejs add-default-data.js
 - Now run nodejs server.js
 - Open browser and go to the url: http://localhost:8000
+
+[Click here] (http://ec2-52-74-208-196.ap-southeast-1.compute.amazonaws.com:8000/) to see a live preview!
