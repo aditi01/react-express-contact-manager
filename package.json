@@ -1,0 +1,13 @@
+{
+  "name": "react-express-contact-manager",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "~4.13.3",
+    "consolidate": "~0.13.1",
+    "handlebars": "~4.0.5",
+    "body-parser": "~1.14.1",
+    "mongodb": "~2.0.50",
+    "mocha": "~2.3.4",
+    "chai": "~3.4.1"
+  }
+}
